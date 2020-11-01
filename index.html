@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My resume</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <!--main container-->
     <div class="wrapper">
       <aside class="sidebar">
-        <img
+        <img 
           class="my-photo"
           src="./img/IMG_20191219_201646_901.jpg"
           alt="My photo"
@@ -23,25 +23,31 @@
         <!--contacts container-->
         <div class="contacts-container">
           <h3 class="contacts-tittle">Contacts</h3>
-          <div>
-            <span class="contacts-tittle-type">C:</span>
-            <a class="contacts-link" href="tel:380993318315"
-              >+38 099 331 83 15</a
-            >
-          </div>
-          <div>
-            <span class="contacts-tittle-type">E:</span>
-            <a class="contacts-link" href="mailto:chornyiav@gmail.com"
-              >tredstoun651@ukr.net</a
-            >
-          </div>
-          <div>
-            <span class="contacts-tittle-type">G:</span>
-            <a class="contacts-link" href="https://github.com/DmytroVasylenko6"
-              >github.com/DmytroVasylenko6</a
-            >
-          </div>
-        </div>
+          <ul class="list">
+
+            <li class="contacts-item">
+            <a class="contacts-link" href="tel:380993318315">
+              <svg class="icon icon-phone-call">
+                <use xlink:href="./img/sprite.svg#icon-phone-call"></use>
+              </svg>
+              <span>+38 099 331 83 15</span> </a></li>
+
+            <li class="contacts-item">
+            <a class="contacts-link" href="mailto:chornyiav@gmail.com">
+              <svg class="icon icon-mail4">
+                  <use xlink:href="./img/sprite.svg#icon-mail4"></use>
+              </svg> 
+              <span>tredstoun651@ukr.net</span></a></li>
+
+            <li class="contacts-item">
+            <a class="contacts-link" href="https://github.com/DmytroVasylenko6">
+              <svg class="icon icon-git">
+                 <use xlink:href="./img/sprite.svg#icon-github-logo"></use>
+              </svg>
+              <span>github.com/DmytroVasylenko6</span></a></li>
+          </ul>
+          
+        
 
         <!--tech Skills container-->
         <div class="tech-skills-container">
@@ -77,33 +83,30 @@
         <!-- project container-->
         <div class="projects-container">
           <h3 class="about-me-tittle">Projects</h3>
-          <ol>
+          <ul class="list">
             <li class="project-item">
               <a
                 class="projects-link"
                 href="https://dmytrovasylenko6.github.io/goit-markup-hw-08/"
                 >https://dmytrovasylenko6.github.io/goit-markup-hw-08/</a
-              >
-              <span class="dots">............................</span>
+              > <br>
               <span>
                 <b>[</b> <span class="tech-name">HTML5, CSS3</span> <b>]</b>
               </span>
             </li>
-            <span class="project-item">Командні проекти:</span>
+            <span class="project-item team">Командні проекти:</span>
             <li class="project-item">
               <a
                 class="projects-link"
                 href="https://yuriistreltsov.github.io/BarberShop/"
                 >https://yuriistreltsov.github.io/BarberShop/</a
               >
-              <span class="dots"
-                >........................................................</span
-              >
+                 <br>
               <span>
                 <b>[</b> <span class="tech-name">HTML5, CSS3</span> <b>]</b>
               </span>
             </li>
-          </ol>
+          </ul>
         </div>
 
         <!--work experience-->
@@ -162,5 +165,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/svgxuse.js"></script>
   </body>
 </html>

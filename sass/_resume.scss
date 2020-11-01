@@ -1,0 +1,20 @@
+.wrapper {
+  background: #eedbdb;
+  margin: 0 auto;
+  box-shadow: 5px 9px 20px rgba(48, 167, 18, 0.15);
+  border-radius: 30px;
+  overflow: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}

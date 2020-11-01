@@ -1,0 +1,354 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: Montserrat;
+  background-size: auto;
+  background: -webkit-gradient(linear, left top, right top, from(#052555), color-stop(#a53c0b), color-stop(#092c61), to(#9c3c10));
+  background: linear-gradient(90deg, #052555, #a53c0b, #092c61, #9c3c10);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.wrapper {
+  background: #eedbdb;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 9px 20px rgba(48, 167, 18, 0.15);
+          box-shadow: 5px 9px 20px rgba(48, 167, 18, 0.15);
+  border-radius: 30px;
+  overflow: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .wrapper {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+  }
+}
+
+.sidebar {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#052555), to(#9c3c10));
+  background-image: linear-gradient(to bottom right, #052555, #9c3c10);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .sidebar {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .my-photo {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .my-photo {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .my-photo {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .my-photo {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .about-me-container {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-me-container {
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-me-container {
+    width: 468px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-me-container {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    width: 830px;
+  }
+}
+
+.profession {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 23px;
+}
+
+.name {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 89px;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.discription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 24px;
+}
+
+.info-container {
+  margin-bottom: 65px;
+}
+
+.about-me-tittle {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.projects-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #595959;
+  text-decoration: none;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  text-decoration: underline;
+  color: blue;
+}
+
+.tech-name {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.project-item {
+  font-weight: 700;
+}
+
+.team {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.projects-container {
+  margin-bottom: 50px;
+}
+
+.profession-tittle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.profession-company {
+  color: #ff6b08;
+}
+
+.profession-time {
+  color: #aeaeae;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.profession-divider {
+  color: #000000;
+}
+
+.profesion-duties {
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+
+.profesion-duties-item {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.my-education {
+  color: #ff6b08;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.management {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.contacts-container {
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.contacts-tittle {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.contacts-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #888e96;
+}
+
+.contacts-link:hover {
+  color: aqua;
+}
+
+.contacts-tittle-type {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.tech-skills-tittle {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.tech-skills-container {
+  margin-top: 55px;
+}
+
+.tech-skills-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #e4630e;
+  margin-left: 15px;
+}
+
+.tech-skills-text {
+  color: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */
