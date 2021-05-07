@@ -52,7 +52,6 @@ body {
   margin: 0 auto;
   -webkit-box-shadow: 5px 9px 20px rgba(48, 167, 18, 0.15);
           box-shadow: 5px 9px 20px rgba(48, 167, 18, 0.15);
-  border-radius: 30px;
   overflow: auto;
 }
 
@@ -80,7 +79,6 @@ body {
 .sidebar {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#052555), to(#9c3c10));
   background-image: linear-gradient(to bottom right, #052555, #9c3c10);
-  padding-top: 40px;
   padding-bottom: 40px;
 }
 
